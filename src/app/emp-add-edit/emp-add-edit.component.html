@@ -1,0 +1,34 @@
+<div mat-dialog-title>
+    <h1>Formulario de Productos</h1>
+</div>
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content class="content">
+         
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Nombres</mat-label>
+                <input matInput type="text" placeholder="Ex. Producto nombre" formControlName="name">
+            </mat-form-field>             
+        </div>
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Descripción</mat-label>
+                <input matInput placeholder="Ex. Descripcion Producto" formControlName="description">
+            </mat-form-field>
+             
+        </div>         
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Precio</mat-label>
+                <input matInput placeholder="Ex. 4" type="number" formControlName="price">
+            </mat-form-field>
+             
+        </div>
+    </div>
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button color="primary" type="submit">{{data ? 'Actualizar': 'Grabar'}}</button>
+        <button mat-raised-button type="button" [mat-dialog-close]="false">Cancelar</button>
+        
+    </div>
+</form>

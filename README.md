@@ -52,14 +52,6 @@ Instala Angular Material:
 
 ng add @angular/material
 
-Instala json-server:
-
-npm i json-server
-
-Inicia json-server:
-
-npx json-server db.json
-
 ng serve
 
 Inicia la aplicación en un host y puerto específicos:
@@ -69,6 +61,26 @@ ng serve --host 0.0.0.0 --port 4201
 En el archivo angular-crud-app/src/app/services/employee.service.ts, cambia la URL de http://localhost:3000/employees a la URL del servidor RESTful API.
 
 El servidor RESTful API en http://192.168.1.10/aprod tiene las siguientes características:
+
+## Imagenes
+![crud](c.png)
+
+Busqueda:
+
+![crud](c_busq.png)
+
+Adición:
+
+![crud](c_add.png)
+
+Modificación:
+
+![crud](c_mod.png)
+
+Eliminación:
+
+![crud](c_del.png)
+
 
 
 ## Comandos utiles
